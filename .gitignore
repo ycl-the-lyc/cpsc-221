@@ -1,0 +1,17 @@
+/*
+!*/
+/*/*
+
+# self
+!.gitignore
+
+# sub dir
+
+# doc
+!**/*.md
+
+# env
+!**/default.nix
+!**/flake.nix
+!**/.envrc
+
