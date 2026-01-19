@@ -30,6 +30,11 @@
             then valgrind-light
             else null
           )
+          (
+            if env.isDarwin
+            then lldb
+            else null
+          )
         ];
         buildInputs = with pkgs; [
           libpng
