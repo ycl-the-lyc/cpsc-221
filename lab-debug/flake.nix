@@ -19,11 +19,12 @@
     in {
       default = pkgs.mkShell {
         nativeBuildInputs = with pkgs; [
-          gcc
+          clang
           llvm
           gnumake
           gdb
           bear
+          imagemagick
           (
             if env.isLinux
             then valgrind-light
