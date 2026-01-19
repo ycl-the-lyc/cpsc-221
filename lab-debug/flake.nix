@@ -20,6 +20,7 @@
       default = pkgs.mkShell {
         nativeBuildInputs = with pkgs; [
           gcc
+          llvm
           gnumake
           gdb
           bear
