@@ -1,5 +1,5 @@
 {
-  description = "CPSC 221 Lab Dict";
+  description = "CPSC 221 Lab AVL";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -20,7 +20,7 @@
     in {
       default = pkgs.mkShell {
         nativeBuildInputs = with pkgs; [
-          gcc
+          clang
           gnumake
           (
             if env.isDarwin
